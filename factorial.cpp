@@ -1,6 +1,6 @@
 #include <iostream>
 
-long fibonachi(int num)
+long my_fibo(int num)
 {
 	if (num == 0 || num == 1) {
 		return num;
@@ -20,7 +20,7 @@ long fibonachi(int num)
 	return num1;
 }
 
-long long factorial(int num)
+long long foo(int num)
 {
 	if (num < 0) {
 		return -1;
@@ -43,7 +43,7 @@ int main()
 	int num = 0;
 	
 	std::cin >> num;
-	std::cout << factorial(num) << std::endl;
+	std::cout << foo(num) << std::endl;
 	std::cout << fibonachi(num) << std::endl;
 
 	return 0;
