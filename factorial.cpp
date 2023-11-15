@@ -44,7 +44,7 @@ int main()
 	
 	std::cin >> num;
 	std::cout << foo(num) << std::endl;
-	std::cout << fibonachi(num) << std::endl;
+	std::cout << my_fibo(num) << std::endl;
 
 	return 0;
 }
