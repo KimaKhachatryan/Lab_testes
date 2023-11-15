@@ -1,5 +1,25 @@
 #include <iostream>
 
+long fibonachi(int num)
+{
+	if (num == 0 || num == 1) {
+		return num;
+	}
+
+	long num1 = 0;
+	long num2 = 1;
+	long sum = 0;
+
+	while (num) {
+		sum = num1 + num2;
+		num1 = num2;
+		num2 = sum;
+		--num;
+	}
+
+	return num1;
+}
+
 long long factorial(int num)
 {
 	if (num < 0) {
@@ -24,6 +44,8 @@ int main()
 	
 	std::cin >> num;
 	std::cout << factorial(num) << std::endl;
+	std::cout << fibonachi(num) << std::endl;
+
 	return 0;
 }
 
