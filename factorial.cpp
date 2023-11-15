@@ -1,6 +1,7 @@
 #include <iostream>
 
-long my_fibo(int num)
+
+long new_fibo(int num)
 {
 	if (num == 0 || num == 1) {
 		return num;
@@ -43,8 +44,9 @@ int main()
 	int num = 0;
 	
 	std::cin >> num;
-	std::cout << foo(num) << std::endl;
-	std::cout << my_fibo(num) << std::endl;
+
+	std::cout << factorial(num) << std::endl;
+	std::cout << new_fibo(num) << std::endl;
 
 	return 0;
 }
